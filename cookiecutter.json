@@ -1,0 +1,9 @@
+{
+    "templates": {
+        "entitylayer": {
+            "path": "./entitylayer",
+            "title": "Entity Layer",
+            "description": "A cookiecutter template for an entity layer"
+        }
+    }
+}
