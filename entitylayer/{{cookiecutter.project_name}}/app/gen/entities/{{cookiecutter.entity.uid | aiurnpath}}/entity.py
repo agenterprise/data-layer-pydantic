@@ -11,10 +11,9 @@ type BOOL = bool
 type DICT = dict
 
 class {{cookiecutter.entity.uid | aiurnvar | capitalize }}Entity(BaseModel):
-    {% if cookiecutter.entity.elements|length == 0 %}
+    {%- if cookiecutter.entity.elements|length == 0 %}
     pass
-    {% endif %}
-    {% for element in cookiecutter.entity.elements %}
+    {%- endif %}
+    {%- for element in cookiecutter.entity.elements %}
     {{ element['aiurn'] | aiurnvar }}:{% if element['ref'] |length == 0 %}{{element['type']}}{%else%}{{element['ref'] | aiurnvar | capitalize }}Entity{%endif%} = Field("",description="{{element['description'] | replace('"','')}}")
-    {% endfor %}
-   
+    {%- endfor %}

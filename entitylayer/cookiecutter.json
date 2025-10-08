@@ -4,7 +4,7 @@
     "entity": "{{ cookiecutter.entity }",
     "project_build_id": "{{ cookiecutter.project_build_id }}",
     "_extensions": [
-        "local_extensions.AIURNExtension"],
+        "local_extensions.AIURNExtension", "cookiecutter.extensions.SlugifyExtension"],
      "_copy_without_render": [
     ],
      "layerversion": "0.0.1",
